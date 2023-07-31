@@ -29,7 +29,11 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <% league.divisions.each do |division| %>
-                      <li><a class="dropdown-item" href="<%= standings_link(division) %>%"><%= division.name -%> Standings</a></li>
+                      <li>
+                        <a class="dropdown-item" href="<%= standings_link(division) %>">
+                          <%= division.name %> Standings
+                        </a>
+                      </li>
                     <% end %>
                   </ul>
                 </li>
