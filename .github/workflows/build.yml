@@ -24,6 +24,11 @@ jobs:
       - name: Build the site
         run: bundle exec rake site:generate
 
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: success() && github.ref == 'refs/heads/main'
