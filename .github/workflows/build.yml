@@ -1,0 +1,34 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1.152.0
+        with:
+          ruby-version: 3.0.3
+          bundler-cache: true
+
+      - name: Build the site
+        run: bundle exec rake site:generate
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: success() && github.ref == 'refs/heads/main'
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./site/build/
+          force_orphan: true
