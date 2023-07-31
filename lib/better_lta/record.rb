@@ -27,8 +27,26 @@ module BetterLTA
       wins * 2 + ties
     end
 
-    def differential
+    def run_differential
       runs_scored - runs_allowed
+    end
+
+    def games_played
+      wins + losses + ties
+    end
+
+    def runs_allowed_average
+      return 0 if games_played.zero?
+      (runs_allowed / games_played.to_f).round(2)
+    end
+
+    def runs_scored_average
+      return 0 if games_played.zero?
+      (runs_scored / games_played.to_f).round(2)
+    end
+
+    def wins_losses_ties
+      "#{wins}-#{losses}-#{ties}"
     end
   end
 end

@@ -29,11 +29,9 @@ module BetterLTA
       game.home_score = home_score
       game.visitor_score = visitor_score
 
-      puts game.home_name
       home_team = find_team(game.home_name)
       home_team.record_result(score: home_score, opponent_score: visitor_score)
 
-      puts game.visitor_name
       visitor_team = find_team(game.visitor_name)
       visitor_team.record_result(score: visitor_score, opponent_score: home_score)
     end

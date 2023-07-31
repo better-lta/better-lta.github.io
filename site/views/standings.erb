@@ -1,0 +1,30 @@
+<h1><%= division.name -%> Division Standings</h1>
+
+<% division.conferences.each do |conference| %>
+<h2><%= conference.name -%> Conference</h2>
+
+<table class="table table-striped table-hover table-responsive table-standings">
+  <thead>
+    <tr>
+      <th data-sort-method="none">Team</th>
+      <th data-sort-method="none">Record</th>
+      <th>Runs Allowed Average</th>
+      <th>Runs Scored Average</th>
+      <th>Run Differential</th>
+      <th data-sort-default>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% conference.sorted_teams.each do |team| %>
+      <tr>
+        <td><%= team.name -%></td>
+        <td><%= team.record.wins_losses_ties -%></td>
+        <td><%= team.record.runs_allowed_average -%></td>
+        <td><%= team.record.runs_scored_average -%></td>
+        <td><%= team.record.run_differential -%></td>
+        <td><%= team.record.points -%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>
