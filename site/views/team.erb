@@ -1,6 +1,6 @@
 <h1>
-  <a href="<%= standings_link(division) %>"><%= division.name %>Division</a>:
-  <%= team.name %>
+  <a href="<%= standings_link(division) %>"><%= division.name %> Division</a>:
+  <%= team.name %> <small>(<%= team.record.wins_losses_ties %>)</small>
 </h1>
 
 <table class="table table-striped table-hover table-responsive">

@@ -39,6 +39,7 @@ module BetterLTA
     def generate_index
       template = Tilt.new(File.join(TEMPLATE_PATH, "index.erb"))
       league = BetterLTA.league
+      context.active_page = "home"
 
       index_page = layout.render(context, league: league) do
         template.render(context, divisions: league.divisions)
@@ -50,6 +51,7 @@ module BetterLTA
     def generate_standings
       template = Tilt.new(File.join(TEMPLATE_PATH, "standings.erb"))
       league = BetterLTA.league
+      context.active_page = "standings"
 
       league.divisions.each do |division|
         standings_page = layout.render(context, league: league) do
@@ -63,6 +65,7 @@ module BetterLTA
     def generate_team_pages
       template = Tilt.new(File.join(TEMPLATE_PATH, "team.erb"))
       league = BetterLTA.league
+      context.active_page = "teams"
 
       league.divisions.each do |division|
         division.teams.each do |team|
@@ -74,7 +77,6 @@ module BetterLTA
         end
       end
     end
-
 
     def generate_assets
       FileUtils.cp_r(ASSET_PATH, SITE_PATH)
