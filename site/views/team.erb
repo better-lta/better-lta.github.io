@@ -1,0 +1,33 @@
+<h1>
+  <a href="<%= standings_link(division) %>"><%= division.name %>Division</a>:
+  <%= team.name %>
+</h1>
+
+<table class="table table-striped table-hover table-responsive">
+  <thead>
+    <th>Date</th>
+    <th>Visiting Team</th>
+    <th>Home Team</th>
+    <th>Location</th>
+    <th>Result</th>
+  </thead>
+  <tbody>
+    <% team.games.sort_by(&:date_time).each do |game| %>
+      <tr>
+        <td><%= game.date_time.strftime("%B %e, %Y @ %l:%M %p") %></td>
+        <td>
+          <a href="<%= team_link(division, game.visitor_name) %>">
+            <%= game.visitor_name %>
+          </a>
+        </td>
+        <td>
+          <a href="<%= team_link(division, game.home_name) %>">
+            <%= game.home_name %>
+          </a>
+        </td>
+        <td><%= game.location %></td>
+        <td><%= game.result(for_team: team) %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

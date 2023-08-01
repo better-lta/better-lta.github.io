@@ -20,7 +20,11 @@
   <tbody>
     <% conference.sorted_teams.each do |team| %>
       <tr>
-        <td><%= team.name %></td>
+        <td>
+          <a href="<%= team_link(division, team) %>">
+            <%= team.name %>
+          </a>
+        </td>
         <td><%= team.record.wins_losses_ties %></td>
         <td><%= team.record.runs_allowed_average %></td>
         <td><%= team.record.runs_scored_average %></td>

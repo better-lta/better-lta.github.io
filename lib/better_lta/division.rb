@@ -22,6 +22,8 @@ module BetterLTA
 
     def schedule_game(game)
       @games << game
+      find_team(game.home_name)&.schedule_game(game)
+      find_team(game.visitor_name)&.schedule_game(game)
     end
 
     def record_result(id:, home_score:, visitor_score:)
@@ -36,10 +38,14 @@ module BetterLTA
       visitor_team.record_result(score: visitor_score, opponent_score: home_score)
     end
 
+    def teams
+      conferences.flat_map(&:teams)
+    end
+
     private
 
     def find_team(name)
-      conferences.flat_map(&:teams).find { |team| team.name == name }
+      teams.find { |team| team.name == name }
     end
   end
 end

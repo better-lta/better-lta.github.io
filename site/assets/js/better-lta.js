@@ -1,1 +1,1 @@
-new Tablesort(document.querySelectorAll(".table-standings"));
+new Tablesort(document.querySelectorAll('.table-standings'));

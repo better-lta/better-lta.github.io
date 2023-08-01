@@ -23,6 +23,7 @@ module BetterLTA
       clean
       generate_index
       generate_standings
+      generate_team_pages
       generate_assets
     end
 
@@ -58,6 +59,22 @@ module BetterLTA
         File.write(File.join(SITE_PATH, "#{division.name.downcase}-standings.html"), standings_page)
       end
     end
+
+    def generate_team_pages
+      template = Tilt.new(File.join(TEMPLATE_PATH, "team.erb"))
+      league = BetterLTA.league
+
+      league.divisions.each do |division|
+        division.teams.each do |team|
+          team_page = layout.render(context, league: league) do
+            template.render(context, division: division, team: team)
+          end
+
+          File.write(File.join(SITE_PATH, context.team_link(division, team)), team_page)
+        end
+      end
+    end
+
 
     def generate_assets
       FileUtils.cp_r(ASSET_PATH, SITE_PATH)
