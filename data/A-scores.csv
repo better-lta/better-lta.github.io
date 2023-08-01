@@ -1,36 +1,36 @@
 Game 6,Medford/North End,2,Reading Red,6,06/21/2023
 Game 2,Belmont/Watertown,9,Newton,7,06/22/2023
-Game 1,Billerica,3,Reading Black,7,06/22/2023
-Game 10,Newton,2,Waltham,11,06/22/2023
-Game 9,Billerica,2,Reading Red,4,06/22/2023
-Game 8,The Base,0,Brookline,15,06/22/2023
-Game 5,The Base,4,Cambridge,10,06/22/2023
-Game 4,Woburn,3,Brookline,2,06/22/2023
 Game 3,Waltham,12,Acton-Boxborough,3,06/22/2023
+Game 4,Woburn,3,Brookline,2,06/22/2023
+Game 5,The Base,4,Cambridge,10,06/22/2023
+Game 8,The Base,0,Brookline,15,06/22/2023
+Game 9,Billerica,2,Reading Red,4,06/22/2023
+Game 10,Newton,2,Waltham,11,06/22/2023
+Game 1,Billerica,3,Reading Black,7,06/22/2023
+Game 7,Cambridge,14,Medford/North End,0,06/23/2023
 Game 11,Woburn,13,Acton-Boxborough,0,06/23/2023
 Game 12,Reading Black,12,Belmont/Watertown,4,06/23/2023
-Game 7,Cambridge,14,Medford/North End,0,06/23/2023
 Game 14,Cambridge,8,Brookline,4,06/27/2023
-Game 17,Waltham,0,Billerica,16,06/27/2023
 Game 20,Reading Red,12,The Base,6,06/27/2023
-Game 21,Brookline,6,Medford/North End,8,06/28/2023
-Game 24,Reading Red,2,Belmont/Watertown,2,06/28/2023
-Game 22,Newton,0,Woburn,6,06/28/2023
+Game 17,Waltham,0,Billerica,16,06/27/2023
 Game 19,Reading Black,4,Cambridge,8,06/28/2023
-Game 28,Billerica,4,Belmont/Watertown,5,06/29/2023
-Game 29,Reading Black,5,Newton,1,06/29/2023
+Game 21,Brookline,6,Medford/North End,8,06/28/2023
+Game 22,Newton,0,Woburn,6,06/28/2023
+Game 24,Reading Red,2,Belmont/Watertown,2,06/28/2023
 Game 30,Woburn,2,Waltham,6,06/29/2023
+Game 29,Reading Black,5,Newton,1,06/29/2023
+Game 28,Billerica,4,Belmont/Watertown,5,06/29/2023
 Game 27,The Base,5,Medford/North End,14,06/30/2023
 Game 13,Reading Black,0,Reading Red,1,07/01/2023
-Game 31,Newton,7,The Base,4,07/06/2023
 Game 34,Brookline,9,Waltham,2,07/06/2023
+Game 31,Newton,7,The Base,4,07/06/2023
 Game 82,Belmont/Watertown,6,Medford/North End,5,07/07/2023
 Game 32,Reading Black,3,Woburn,13,07/07/2023
 Game 26,Cambridge,0,Reading Red,1,07/09/2023
+Game 40,The Base,1,Billerica,11,07/11/2023
 Game 43,Acton-Boxborough,0,Reading Red,7,07/11/2023
 Game 45,Newton,2,Brookline,14,07/11/2023
-Game 40,The Base,1,Billerica,11,07/11/2023
-Game 25,Brookline,7,Acton-Boxborough,0,07/12/2023
+Game 64,Acton-Boxborough,0,Cambridge,7,07/12/2023
 Game 104,Acton-Boxborough,0,Reading Black,7,07/12/2023
 Game 33,Medford/North End,7,Acton-Boxborough,0,07/12/2023
 Game 99,Acton-Boxborough,0,Waltham,7,07/12/2023
@@ -40,42 +40,44 @@ Game 85,Newton,7,Acton-Boxborough,0,07/12/2023
 Game 76,The Base,7,Acton-Boxborough,0,07/12/2023
 Game 74,Acton-Boxborough,0,Woburn,7,07/12/2023
 Game 69,Acton-Boxborough,0,Newton,7,07/12/2023
-Game 64,Acton-Boxborough,0,Cambridge,7,07/12/2023
 Game 61,Acton-Boxborough,0,Billerica,7,07/12/2023
 Game 52,Acton-Boxborough,0,The Base,7,07/12/2023
-Game 47,Reading Black,7,Acton-Boxborough,0,07/12/2023
+Game 25,Brookline,7,Acton-Boxborough,0,07/12/2023
 Game 37,Newton,1,Billerica,4,07/12/2023
 Game 41,Woburn,9,Medford/North End,7,07/12/2023
+Game 47,Reading Black,7,Acton-Boxborough,0,07/12/2023
 Game 42,Belmont/Watertown,6,Cambridge,7,07/12/2023
 Game 18,Acton-Boxborough,0,Belmont/Watertown,7,07/12/2023
-Game 51,The Base,0,Belmont/Watertown,7,07/13/2023
-Game 48,Reading Red,14,Waltham,5,07/13/2023
 Game 49,Brookline,12,Billerica,8,07/13/2023
+Game 48,Reading Red,14,Waltham,5,07/13/2023
+Game 51,The Base,0,Belmont/Watertown,7,07/13/2023
 Game 50,Cambridge,0,Woburn,13,07/14/2023
 Game 46,Medford/North End,5,Newton,1,07/14/2023
-Game 53,Billerica,4,Woburn,3,07/17/2023
 Game 55,Reading Red,3,Newton,0,07/17/2023
+Game 53,Billerica,4,Woburn,3,07/17/2023
 Game 56,Belmont/Watertown,1,Brookline,3,07/17/2023
 Game 57,Reading Red,5,Brookline,2,07/18/2023
 Game 58,Medford/North End,4,Waltham,7,07/18/2023
-Game 35,Billerica,4,Cambridge,3,07/19/2023
 Game 59,Cambridge,8,Newton,2,07/19/2023
 Game 63,Belmont/Watertown,3,Waltham,8,07/19/2023
-Game 70,Waltham,5,Belmont/Watertown,7,07/20/2023
-Game 65,Reading Red,7,Reading Black,3,07/20/2023
+Game 35,Billerica,4,Cambridge,3,07/19/2023
 Game 66,Brookline,10,Cambridge,1,07/20/2023
+Game 65,Reading Red,7,Reading Black,3,07/20/2023
 Game 67,The Base,7,Woburn,0,07/20/2023
+Game 70,Waltham,5,Belmont/Watertown,7,07/20/2023
 Game 16,Medford/North End,6,Billerica,1,07/21/2023
 Game 68,Billerica,5,Medford/North End,3,07/21/2023
-Game 73,Waltham,13,Newton,3,07/24/2023
 Game 72,Reading Red,4,Billerica,2,07/24/2023
 Game 23,Waltham,4,Cambridge,6,07/24/2023
+Game 73,Waltham,13,Newton,3,07/24/2023
 Game 71,Brookline,11,The Base,3,07/24/2023
-Game 75,Belmont/Watertown,6,Reading Black,10,07/25/2023
 Game 77,Woburn,1,Billerica,7,07/25/2023
+Game 75,Belmont/Watertown,6,Reading Black,10,07/25/2023
 Game 38,Waltham,7,The Base,0,07/25/2023
 Game 83,The Base,2,Waltham,14,07/26/2023
 Game 39,Reading Red,3,Woburn,2,07/26/2023
 Game 84,Medford/North End,2,Cambridge,9,07/27/2023
 Game 81,Cambridge,1,Waltham,0,07/31/2023
+Game 91,Billerica,4,Waltham,6,07/31/2023
 Game 93,Cambridge,0,Reading Black,3,07/31/2023
+Game 95,Medford/North End,2,Brookline,5,07/31/2023
