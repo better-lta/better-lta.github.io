@@ -21,18 +21,8 @@ jobs:
           ruby-version: 3.0.3
           bundler-cache: true
 
-      - name: Configure Git
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
       - name: Refresh LTA Data
         run: "bundle exec rake data:refresh"
-        
-      - name: Commit Data
-        run: |
-          git diff HEAD data && git add data && git commit -m "Update LTA Data"
-          git push origin $GITHUB_REF
 
       - name: Build the site
         run: bundle exec rake site:generate
