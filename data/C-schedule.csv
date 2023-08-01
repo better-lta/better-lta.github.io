@@ -117,7 +117,6 @@ Game 626,07/25/2023,Tuesday,5:30 pm,Chelmsford,Waltham,Nipper Maher,Rain-Out
 Game 628,07/25/2023,Tuesday,5:45 pm,Billerica,Wayland,Wayland High School,Rain-Out
 Game 629,07/25/2023,Tuesday,5:45 pm,Belmont,North Andover,Grogans Field,Rain-Out
 Game 630,07/25/2023,Tuesday,5:45 pm,Melrose,Brookline,Amory Field,Rain-Out
-Game 633,07/25/2023,Tuesday,5:45 pm,Reading Black,Cambridge,Rindge Field,Scheduled
 Game 625,07/25/2023,Tuesday,7:00 pm,Lincoln-Sudbury,Acton-Boxborough,ABRHS Field 1,Rain-Out
 Game 627,07/25/2023,Tuesday,7:00 pm,Andover,Wayland/Weston,Weston High School,Rain-Out
 Game 545,07/26/2023,Wednesday,5:45 pm,Marblehead,Reading Red,Symonds ,Scheduled
@@ -163,6 +162,7 @@ Game 659,08/01/2023,Tuesday,7:00 pm,Wayland/Weston,Wayland,Weston High School,Sc
 Game 664,08/01/2023,Tuesday,7:30 pm,Winthrop,Cambridge,St Peters,Scheduled
 Game 570,08/02/2023,Wednesday,5:45 pm,Arlington,Woburn,Spy Pond Field,Scheduled
 Game 598,08/02/2023,Wednesday,5:45 pm,Andover,Wayland,Wayland High School,Scheduled
+Game 633,08/02/2023,Wednesday,5:45 pm,Reading Black,Cambridge,Rindge Field,Scheduled
 Game 667,08/02/2023,Wednesday,5:45 pm,Melrose,Marblehead,Seaside Park,Scheduled
 Game 666,08/02/2023,Wednesday,6:30 pm,Winthrop,Maynard/Stow,Crowe Park,Scheduled
 Game 668,08/03/2023,Thursday,5:30 pm,Wayland,Waltham,Cacciatore Field ,Scheduled
@@ -186,6 +186,6 @@ Game 686,08/08/2023,Tuesday,12:00 am,Loser Game 680,Loser Game 681,Loser Elimina
 Game 687,08/08/2023,Tuesday,12:00 am,Loser Game 682,Loser Game 683,Loser Eliminated,Scheduled
 Game 688,08/10/2023,Thursday,12:00 am,Loser Game 684,Winner Game 686,Winner Advances to Final Four Saturday 8/12,Scheduled
 Game 689,08/10/2023,Thursday,12:00 am,Loser Game 685,Winner Game 687,Winner Advances to Final Four Saturday 8/12,Scheduled
-Game 690,08/12/2023,Saturday,12:00 am,Lowest Remaining Seed,Highest Remaining Seed,Winners Advances to Championship Sunday,Scheduled
-Game 691,08/12/2023,Saturday,12:00 am,2nd Lowest Remaining Seed,2nd Highest Remaining Seed,Winners Advances to Championship Sunday,Scheduled
-Game 692,08/13/2023,Sunday,12:00 am,Winner Game 688,Winner Game 689,C Division Champion,Scheduled
+Game 690,08/12/2023,Saturday,10:00 am,Lowest Remaining Seed,Highest Remaining Seed,Pine Banks Turf,Scheduled
+Game 691,08/12/2023,Saturday,10:00 am,2nd Lowest Remaining Seed,2nd Highest Remaining Seed,Pine Banks Grass,Scheduled
+Game 692,08/13/2023,Sunday,9:30 am,Winner Game 688,Winner Game 689,Morelli Field,Scheduled
