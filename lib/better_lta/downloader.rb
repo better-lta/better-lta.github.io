@@ -21,7 +21,6 @@ module BetterLTA
       fetch_scores
     end
 
-
     private
 
     attr_reader :division, :schedule_path, :scores_path

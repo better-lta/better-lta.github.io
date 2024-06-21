@@ -15,7 +15,7 @@ module BetterLTA
     def scores_file
       "data/#{name}-scores.csv"
     end
-    
+
     def schedule_file
       "data/#{name}-schedule.csv"
     end
