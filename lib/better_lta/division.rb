@@ -28,14 +28,19 @@ module BetterLTA
 
     def record_result(id:, home_score:, visitor_score:)
       game = games.find { |game| game.id == id }
-      game.home_score = home_score
-      game.visitor_score = visitor_score
 
-      home_team = find_team(game.home_name)
-      home_team.record_result(score: home_score, opponent_score: visitor_score)
+      if game
+        game.home_score = home_score
+        game.visitor_score = visitor_score
 
-      visitor_team = find_team(game.visitor_name)
-      visitor_team.record_result(score: visitor_score, opponent_score: home_score)
+        home_team = find_team(game.home_name)
+        home_team.record_result(score: home_score, opponent_score: visitor_score)
+
+        visitor_team = find_team(game.visitor_name)
+        visitor_team.record_result(score: visitor_score, opponent_score: home_score)
+      else
+        puts "can't find game with id #{id}"
+      end
     end
 
     def teams
