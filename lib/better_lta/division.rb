@@ -33,6 +33,8 @@ module BetterLTA
         game.home_score = home_score
         game.visitor_score = visitor_score
 
+        puts "#{game.id} #{game.visitor_name} @ #{game.home_name}"
+
         home_team = find_team(game.home_name)
         home_team.record_result(score: home_score, opponent_score: visitor_score)
 
@@ -50,7 +52,7 @@ module BetterLTA
     private
 
     def find_team(name)
-      teams.find { |team| team.name == name }
+      teams.find { |team| team.name == name.strip }
     end
   end
 end
