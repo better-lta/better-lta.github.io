@@ -2,74 +2,70 @@ module BetterLTA
   class League
     A_NAMES = [
       "Arlington",
+      "Ayer-Shirley",
       "Belmont/Watertown",
       "Billerica",
       "Brookline",
       "Cambridge",
-      "Haverhill",
+      "Everett",
       "Jamaica Plain",
+      "Lowell",
       "Medford",
       "Newton",
       "Waltham",
+      "Wellesley",
+      "Wilmington",
+      "Winchester",
       "Woburn",
     ]
 
     B_ELITE_NAMES = [
-      "Andover",
       "Arlington",
-      "Bedford-Concord",
-      "Billerica",
-      "Brookline",
-      "Bye",
-      "Cambridge",
-      "Lincoln Sudbury",
-      "Marblehead",
-      "Reading Black",
-      "Reading Red",
+      "Bedford",
+      "Billerica Green",
+      "Cambridge Black",
+      "Cambridge Gray",
+      "Georgetown",
+      "Lincoln-Sudbury",
+      "Lynnfield",
+      "North Andover",
+      "Reading",
       "Waltham",
     ]
 
     B_SELECT_NAMES = [
-      "Acton-Boxboro",
+      "Andover",
       "Belmont",
-      "Chelmsford Maroon",
-      "Chelmsford White",
-      "Hudson",
-      "Lexington",
+      "Billerica White",
+      "Everett",
       "Maynard/Stow",
       "Medford",
       "Melrose",
-      "North Andover",
+      "Natick",
       "North End",
-      "Reading White",
+      "Pepperell",
+      "Stoneham",
       "Wayland",
     ]
 
-    C_ELITE_NAMES = [
-      "Arlington",
-      "Lincoln Sudbury",
-      "Lowell",
-      "Marblehead",
-      "Stoneham",
-      "Cambridge",
-      "Winchester",
+    C_NAMES = [
+      "Acton-Boxboro",
       "Andover",
-      "Chelmsford",
-      "Reading Red",
-      "Newburyport",
-    ]
-
-    C_SELECT_NAMES = [
+      "Arlington",
       "Belmont",
-      "Billerica",
+      "Brookline",
+      "CC/Bedford",
+      "Chelmsford",
+      "Lincoln-Sudbury",
+      "Lowell",
+      "Lynnfield",
       "Melrose",
-      "Natick",
-      "New/Lex/Nor",
       "Newton",
+      "Reading Black",
+      "Reading Red",
+      "Stoneham",
       "Waltham",
       "Wayland",
-      "Winthrop",
-      "Woburn",
     ]
 
     def initialize
@@ -83,11 +79,9 @@ module BetterLTA
       b_select_conference = Conference.new(name: "Select", teams: b_select_teams)
       @b_division = Division.new(name: "B", conferences: [b_elite_conference, b_select_conference])
 
-      c_elite_teams = C_ELITE_NAMES.map { |name| Team.new(name: name) }
-      c_select_teams = C_SELECT_NAMES.map { |name| Team.new(name: name) }
-      c_elite_conference = Conference.new(name: "Elite", teams: c_elite_teams)
-      c_select_conference = Conference.new(name: "Select", teams: c_select_teams)
-      @c_division = Division.new(name: "C", conferences: [c_elite_conference, c_select_conference])
+      c_teams = C_NAMES.map { |name| Team.new(name: name) }
+      c_conference = Conference.new(name: "C Division", teams: c_teams)
+      @c_division = Division.new(name: "C", conferences: [c_conference])
     end
 
     def divisions
