@@ -38,7 +38,7 @@ module BetterLTA
       "Belmont",
       "Billerica White",
       "Everett",
-      "Maynard/Stow",
+      "Maynard/Stowe",
       "Medford",
       "Melrose",
       "Natick",

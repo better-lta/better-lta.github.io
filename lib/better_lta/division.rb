@@ -33,8 +33,6 @@ module BetterLTA
         game.home_score = home_score
         game.visitor_score = visitor_score
 
-        puts "#{game.id} #{game.visitor_name} @ #{game.home_name}"
-
         home_team = find_team(game.home_name)
         home_team.record_result(score: home_score, opponent_score: visitor_score)
 
@@ -43,6 +41,9 @@ module BetterLTA
       else
         puts "can't find game with id #{id}"
       end
+    rescue NoMethodError => e
+      puts "Error processing game with id #{id}: #{game.inspect}"
+      raise e
     end
 
     def teams
