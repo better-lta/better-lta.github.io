@@ -1,71 +1,73 @@
 module BetterLTA
   class League
     A_NAMES = [
-      "Arlington",
-      "Ayer-Shirley",
       "Belmont/Watertown",
       "Billerica",
       "Brookline",
       "Cambridge",
+      "Dracut",
       "Everett",
-      "Jamaica Plain",
-      "Lowell",
       "Medford",
       "Newton",
       "Waltham",
-      "Wellesley",
       "Wilmington",
       "Winchester",
       "Woburn",
     ]
 
     B_ELITE_NAMES = [
-      "Arlington",
-      "Bedford",
-      "Billerica Green",
-      "Cambridge Black",
-      "Cambridge Gray",
+      "Belmont",
+      "Billerica",
+      "Brookline",
+      "Cambridge",
+      "Concord-Carlisle",
       "Lincoln-Sudbury",
-      "Lynnfield",
-      "North Andover",
-      "Pepperell",
-      "Reading",
+      "Lowell Red",
+      "Melrose",
+      "Reading Red",
+      "Stoneham",
+      "Triton",
       "Waltham",
     ]
 
     B_SELECT_NAMES = [
       "Andover",
-      "Belmont",
-      "Billerica White",
-      "Everett",
+      "Burlington",
       "Georgetown",
-      "Maynard/Stowe",
-      "Medford",
-      "Melrose",
+      "Lexington",
+      "Lowell Black",
       "Natick",
       "North End",
-      "Stoneham",
+      "Reading Black",
       "Wayland",
+      "Winchester",
     ]
 
-    C_NAMES = [
-      "Acton-Boxboro",
-      "Andover",
+    C_ELITE_NAMES = [
       "Arlington",
-      "Belmont",
+      "Ashland",
+      "Billerica",
+      "Boston",
       "Brookline",
-      "CC/Bedford",
+      "Cambridge",
       "Chelmsford",
-      "Lincoln-Sudbury",
       "Lowell",
-      "Lynnfield",
-      "Melrose",
-      "Newton",
-      "Reading Black",
+      "Natick",
+      "Needham",
       "Reading Red",
-      "Stoneham",
+      "Winchester",
+    ]
+
+    C_SELECT_NAMES = [
+      "Acton Boxboro",
+      "Andover",
+      "CC/Lexington",
+      "Melrose",
+      "North End",
+      "Reading Black",
       "Waltham",
       "Wayland",
+      "Wilmington",
     ]
 
     def initialize
@@ -79,9 +81,11 @@ module BetterLTA
       b_select_conference = Conference.new(name: "Select", teams: b_select_teams)
       @b_division = Division.new(name: "B", conferences: [b_elite_conference, b_select_conference])
 
-      c_teams = C_NAMES.map { |name| Team.new(name: name) }
-      c_conference = Conference.new(name: "C Division", teams: c_teams)
-      @c_division = Division.new(name: "C", conferences: [c_conference])
+      c_elite_teams = C_ELITE_NAMES.map { |name| Team.new(name: name) }
+      c_select_teams = C_SELECT_NAMES.map { |name| Team.new(name: name) }
+      c_elite_conference = Conference.new(name: "Elite", teams: c_elite_teams)
+      c_select_conference = Conference.new(name: "Select", teams: c_select_teams)
+      @c_division = Division.new(name: "C", conferences: [c_elite_conference, c_select_conference])
     end
 
     def divisions
