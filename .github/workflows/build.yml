@@ -13,12 +13,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.2.2
+      - uses: actions/checkout@v5
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1.245.0
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 4.0.5
+          ruby-version: "4.0.5"
           bundler-cache: true
 
       - name: Refresh LTA Data
@@ -28,7 +28,7 @@ jobs:
         run: bundle exec rake site:generate
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: success() && github.ref == 'refs/heads/main'
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
