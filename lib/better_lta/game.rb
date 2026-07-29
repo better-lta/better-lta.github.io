@@ -28,5 +28,25 @@ module BetterLTA
         "T #{score}"
       end
     end
+
+    def completed?
+      !visitor_score.nil? && !home_score.nil?
+    end
+
+    def includes_team?(team)
+      visitor_name == team.name || home_name == team.name
+    end
+
+    def won_by?(team)
+      return false unless completed?
+
+      if visitor_name == team.name
+        visitor_score > home_score
+      elsif home_name == team.name
+        home_score > visitor_score
+      else
+        raise ArgumentError, "#{team.name} did not play in game #{id}"
+      end
+    end
   end
 end

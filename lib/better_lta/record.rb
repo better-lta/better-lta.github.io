@@ -27,6 +27,12 @@ module BetterLTA
       wins * 2 + ties
     end
 
+    def winning_percentage
+      return 0 if games_played.zero?
+
+      Rational(points, games_played * 2)
+    end
+
     def run_differential
       runs_scored - runs_allowed
     end
@@ -38,6 +44,12 @@ module BetterLTA
     def runs_allowed_average
       return 0 if games_played.zero?
       (runs_allowed / games_played.to_f).round(2)
+    end
+
+    def runs_allowed_per_game
+      return 0 if games_played.zero?
+
+      Rational(runs_allowed, games_played)
     end
 
     def runs_scored_average

@@ -11,6 +11,7 @@
     <tr>
       <th data-sort-method="none">Team</th>
       <th data-sort-method="none">Record</th>
+      <th>Winning Percentage</th>
       <th>Runs Allowed Average</th>
       <th>Runs Scored Average</th>
       <th>Run Differential</th>
@@ -26,6 +27,7 @@
           </a>
         </td>
         <td><%= team.record.wins_losses_ties %></td>
+        <td><%= format("%.3f", team.record.winning_percentage) %></td>
         <td><%= team.record.runs_allowed_average %></td>
         <td><%= team.record.runs_scored_average %></td>
         <td><%= team.record.run_differential %></td>
